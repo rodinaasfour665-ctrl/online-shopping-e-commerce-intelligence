@@ -1,0 +1,9 @@
+streamlit>=1.36
+pandas>=2.0
+numpy>=1.24
+scikit-learn==1.6.1
+joblib>=1.3
+plotly>=5.20
+requests>=2.31
+# Optional: only needed if you want PDF context-upload support on the AI Assistant page
+pypdf>=4.0
