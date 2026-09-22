@@ -1,11 +1,3 @@
-"""
-utils/styling.py
------------------
-Custom CSS injection + small reusable HTML component builders
-(metric cards, badges, section headers) used across every page so the
-whole app shares one consistent, "production dashboard" look.
-"""
-
 from pathlib import Path
 import streamlit as st
 

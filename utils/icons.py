@@ -1,18 +1,3 @@
-"""
-utils/icons.py
-----------------
-A small, self-contained set of minimalist line-style SVG icons used
-across the app instead of emoji. Every icon is a plain inline <svg>
-(stroke = currentColor, no fill) so it automatically inherits whatever
-text/accent color the surrounding CSS sets — no image files, no
-external requests, no emoji-font inconsistency between operating
-systems.
-
-Usage:
-    from utils.icons import icon
-    metric_card("Accuracy", "91.2%", icon=icon("target"), accent="indigo")
-    st.markdown(f'<div class="section-title">{icon("chart")} Analytics</div>')
-"""
 
 _STROKE = 'fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"'
 

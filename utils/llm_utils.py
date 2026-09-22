@@ -1,18 +1,3 @@
-"""
-utils/llm_utils.py
--------------------
-Thin wrapper around the Google Gemini API used by the AI Assistant page.
-The API key is read from server-side config only (Streamlit secrets or
-an environment variable) — it is never entered, seen, or stored by the
-end user. Kept dependency-free (plain `requests`) so the app doesn't
-force a specific SDK version.
-
-The assistant is given a system prompt that makes it aware of this
-project (an online-shoppers purchase-intention prediction dashboard),
-so it can answer questions about the model, the dataset, or general
-data-science / e-commerce questions intelligently.
-"""
-
 import os
 import requests
 import streamlit as st

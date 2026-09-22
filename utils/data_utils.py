@@ -1,12 +1,3 @@
-"""
-utils/data_utils.py
---------------------
-Dataset loading + KPI/aggregation helpers used by the Analytics page.
-The app looks for `data/online_shoppers_intention.csv` (the original UCI
-"Online Shoppers Purchasing Intention" dataset). If it isn't there yet,
-the Analytics page lets the user upload it on the fly instead of crashing.
-"""
-
 from pathlib import Path
 import pandas as pd
 import streamlit as st

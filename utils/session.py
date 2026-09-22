@@ -1,13 +1,3 @@
-"""
-utils/session.py
------------------
-Centralised Streamlit session_state initialisation.
-
-Every page calls `init_session_state()` at the top of its script so that
-keys are always guaranteed to exist, no matter which page the user lands
-on first (Streamlit multi-page apps run every page as an independent
-script, so state must be defensively initialised everywhere).
-"""
 
 import streamlit as st
 

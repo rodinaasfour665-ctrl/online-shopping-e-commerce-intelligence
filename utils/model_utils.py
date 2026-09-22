@@ -1,21 +1,3 @@
-"""
-utils/model_utils.py
----------------------
-Everything related to the trained ML pipeline:
- - loading the saved sklearn Pipeline (preprocessing + Gradient Boosting model)
- - turning raw form inputs into the exact 26-column engineered feature row
-   the pipeline was trained on
- - running predictions
- - extracting feature importances
- - static evaluation metrics captured from the training notebook
-
-The pipeline (`models/best_model.pkl`) already contains its own
-ColumnTransformer (RobustScaler for numeric columns + OneHotEncoder for
-categorical columns), so this module only has to reproduce the same
-feature-engineering steps that were applied before the train/test split —
-it must NOT re-scale or re-encode anything itself.
-"""
-
 from pathlib import Path
 import joblib
 import numpy as np
